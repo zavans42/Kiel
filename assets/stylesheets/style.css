@@ -49,11 +49,90 @@ h3 {
     font-size: 3rem;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+footer {
+    display: none;
+}
+
+/* HEADER */
+
+.navLogo,
+.letsTalk {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.navLogo,
+#hamburger {
+    font-size: 3rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.navMenu,
+.letsTalk {
+    display: none;  
+}
+
+.navLogo,
+.navLink,
+#hamburger {
+    color: #696969;
+}
+
+/* MAIN */
+
+
 
 /******************************************
-/* ADDITIONAL STYLES
+/* STATE
 /*******************************************/
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media only screen and (min-width: 768px) {
+
+    #hamburger {
+        display: none;
+    }
+
+    .navMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3.6rem;
+    }
+
+    .letsTalk {
+        display: flex;
+        justify-content: right;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .navMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}

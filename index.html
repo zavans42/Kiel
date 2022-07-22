@@ -7,7 +7,7 @@
     <meta name="keywords" content="one, two, three">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Title in the tab</title>
+    <title>Kiel Agency</title>
     <!-- external CSS link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,22 +22,26 @@
     <div id="page-wrapper">
 
         <!-- HEADER -->
-        <header>
-            <!-- LOGO -->
-            <h3>Kiel</h3>
+        <header id="header">
             <!-- HEADER NAVIGATION -->
-            <nav id="links">
-                <a href="#">Home</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Blog</a>
-                <a href="#">About Us</a>
+            <nav class="navbar">
+                <!-- LOGO -->
+                <a href="#" class="navLogo">Kiel</a>
+                <ul class="navMenu isMobile">
+                    <li><a class='navLink' href="#">Home</a></li>
+                    <li><a class='navLink' href="#">Portfolio</a></li>
+                    <li><a class='navLink' href="#">Blog</a></li>
+                    <li><a class='navLink' href="#">About Us</a></li>
+                </ul>
+
+                <!-- HAMBURGER MENU -->
+                <a href="javascript:void(0);" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+
+                <!-- LET'S TALK -->
+                <a href="#" class="letsTalk">Let's Talk</a>
             </nav>
-            <!-- HAMBURGER MENU -->
-            <a href="javascript:void(0);" id="hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-            <!-- LET'S TALK -->
-            <a href="#">Let's Talk</a>
         </header>
 
         <!-- MAIN -->
