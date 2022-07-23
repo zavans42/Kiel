@@ -164,6 +164,28 @@ footer {
     gap: 1.5rem;
 }
 
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1.6rem 1.5rem; 
+}
+
+footer a {
+    color: white;
+}
+
+footer > section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.2rem 1.6rem;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+}
 
 /******************************************
 /* MODULE
