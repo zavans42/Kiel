@@ -5,7 +5,7 @@
 /* Box Model Hack */
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /******************************************
@@ -38,6 +38,7 @@ h6 {
 h1 {
     font-size: 4rem;
     max-width: 30rem;
+    margin-bottom: 3.2rem;
 }
 
 h2 {
@@ -57,12 +58,16 @@ a {
     text-decoration: none;
 }
 
+p+p {
+    margin-top: 1.6rem;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
 
 footer {
-    display: none;
+    /* display: none; */
 }
 
 /* HEADER */
@@ -82,12 +87,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .navMenu,
 .letsTalk {
-    display: none;  
+    display: none;
 }
 
 .navLogo,
@@ -98,7 +104,74 @@ footer {
 
 /* MAIN */
 
+#kiel {
+    padding: 1rem 1.5rem;
+}
 
+#gone {
+    display: none;
+}
+
+/* PICTURES */
+
+#pictures {
+    margin: 3.2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+#pictures>* {
+    transform: skew(-9deg, 7deg);
+    height: 8rem;
+}
+
+#something {
+    padding: 1rem 1.5rem;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+/* MEET THE TEAM */
+
+#meetTheTeam {
+    text-align: center;
+}
+
+#founders {
+    text-align: center;
+    padding: 1.6rem 1.5rem;
+}
+
+#founders img {
+    max-height: 30rem;
+    border-right: 5rem solid #e7e7e7;
+    border-top: 4rem solid #e7e7e7;
+    border-bottom: 4rem solid #e7e7e7;
+}
+
+.founderInfo {
+    margin: 1.6rem 0;
+}
+
+#employees {
+    padding: 1.6rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+
+/******************************************
+/* MODULE
+/*******************************************/
+
+.inner {
+    padding: 1rem 1.5rem;
+}
 
 /******************************************
 /* STATE
@@ -125,14 +198,4 @@ footer {
         display: flex;
         justify-content: right;
     }
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .navMenu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
 }
