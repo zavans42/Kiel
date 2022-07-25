@@ -19,6 +19,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
 }
 
 img {
@@ -66,11 +67,12 @@ p+p {
 /* LAYOUT
 /*******************************************/
 
-footer {
-    /* display: none; */
-}
-
 /* HEADER */
+
+.navLogo {
+    font-family: 'Changa', sans-serif;
+    font-size: 3.5rem;
+}
 
 .navLogo,
 .letsTalk {
@@ -78,7 +80,6 @@ footer {
     flex-basis: 0;
 }
 
-.navLogo,
 #hamburger {
     font-size: 3rem;
 }
