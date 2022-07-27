@@ -37,20 +37,20 @@ h6 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 4.2rem;
     max-width: 30rem;
     margin-bottom: 3.2rem;
     line-height: 1.3;
 }
 
 h2 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     margin-bottom: 1.6rem;
 }   
 
 h3 {
     font-size: 1.8rem;
-    margin: 1.6rem 0;
+    margin: 0.8rem 0;
 }
 
 h4 {
@@ -75,16 +75,19 @@ p+p {
 
 /* HEADER */
 
+header * {
+    font-size: 1.8rem;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 1.5rem;
+    padding: 2rem 3.2rem;
 }
 
     .navLogo {
         font-family: 'Changa', sans-serif;
-        font-size: 3.5rem;
     }
 
     .navLogo,
@@ -93,8 +96,9 @@ p+p {
         flex-basis: 0;
     }
 
-    #hamburger {
-        font-size: 3rem;
+    .navLogo,
+    #hamburger i {
+        font-size: 3.2rem;
     }
 
     .navMenu,
@@ -106,6 +110,10 @@ p+p {
     .navLink,
     #hamburger {
         color: #696969;
+    }
+
+    #hamburger {
+        display: flex;
     }
 
 /* MAIN */
@@ -125,8 +133,18 @@ p+p {
     grid-gap: 1rem;
 }
 
+#pictures.outer {
+    margin: 4.8rem 0;
+}
+
 .gridImg {
     height: 10rem;
+    width: 100%;
+}
+
+#selection section {
+    margin: 4.8rem 0;
+    text-align: center;
 }
 
 /* #pictures>* {
@@ -180,7 +198,7 @@ p+p {
 #employees .inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1.6rem;
+    grid-gap: 3.2rem;
 }
 
     .employeeInfo {
@@ -193,7 +211,7 @@ p+p {
 footer {
     background-color: black;
     color: white;
-    padding: 3.2rem 1.6rem; 
+    padding: 3.2rem;
 }
 
 footer a {
@@ -203,7 +221,7 @@ footer a {
 footer > section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3.2rem 1.6rem;
+    grid-gap: 3.2rem;
 }
 
 footer nav {
@@ -216,13 +234,13 @@ footer nav {
 /*******************************************/
 
 .inner {
-    padding-right: 1.6rem;
-    padding-left: 1.6rem;
+    padding-right: 3.2rem;
+    padding-left: 3.2rem;
 }
 
 .outer {
-    margin-top: 3.2rem;
-    margin-bottom: 3.2rem;
+    margin-top: 5.6rem;
+    margin-bottom: 5.6rem;
 }
 
 /******************************************
@@ -234,6 +252,14 @@ footer nav {
 /*******************************************/
 
 @media only screen and (min-width: 768px) {
+
+    h3 {
+        margin: 0;
+    }
+    
+    p+p {
+        margin: 0;
+    }
 
     #hamburger {
         display: none;
@@ -249,5 +275,39 @@ footer nav {
     .letsTalk {
         display: flex;
         justify-content: right;
+    }
+
+    #selection .inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #selection .inner > section {
+        display: flex;
+        gap: 3.2rem;
+        justify-content: space-between;
+    }
+
+    #selection .inner > section p {
+        max-width: 33%;
+    }
+
+    #founders .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #employees .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 3.2rem;
+    }
+
+    #rightSide {
+        padding-left: 40%;
+    }
+
+    #rightSideDesc {
+        display: flex;
     }
 }
